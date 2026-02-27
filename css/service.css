@@ -1,0 +1,161 @@
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header #logo {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul li {
+    font-size: 1.25rem;
+}
+
+header nav ul li a {
+    color: var(--black);
+}
+
+header nav ul .header_buttons {
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--indigo);
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+header nav ul .header_buttons i {
+    color: var(--white);
+}
+
+main{
+    background-image: linear-gradient(120deg, #0b2b8b, #a649bc, #7622bf71);
+    animation: bg-animation 4s infinite alternate;
+    background-size: 200% 200%;
+}
+
+@keyframes bg-animation {
+    0%{
+        background-position: right;
+    }
+
+    100%{
+        background-position: left;
+    }
+    
+}
+
+section {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .t-service{
+    color: white;
+    font-size: 43.7px;
+    margin: 30px 0;
+}
+
+section p {
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.card_box{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.cards{
+    width: 24%;
+    height: 520px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cards.one h2{
+    margin-bottom: 50px;
+}
+
+.cards.two h2{
+    margin-bottom: 60px;
+}
+
+.cards.three h2{
+    margin-bottom: 28px;
+}
+
+.cards h2{
+    font-size: 32.4px;
+    text-align: center;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.cards.one ul li:last-child{
+    margin-bottom: 5px;
+}
+
+.cards ul li {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.price p {
+    text-align: center;
+    color: black;
+}
+
+.price h1{
+    font-size: 49.1px;
+    margin-bottom: 15px;
+}
+
+
+.btn{
+    font-size: 21.8px;
+    background-color: white;
+    border: none;
+}
+
+.btn a {
+    padding: 10px 25px;
+    border-radius: 999px;
+    border: 2px solid rgb(121, 121, 121);
+    color: black;
+}
