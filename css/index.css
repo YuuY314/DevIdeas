@@ -23,6 +23,10 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .buttons {
