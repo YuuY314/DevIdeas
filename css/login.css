@@ -1,0 +1,101 @@
+/* Cor gradiente do fundo da tela */
+.background{
+    background: linear-gradient(to right, #3722bb , #828eff);
+
+}
+
+/* Colocando cor do header */
+header{
+    background: white;
+}
+
+.container{
+   /* background: red; */
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   height: calc(100vh - 120px);
+   align-items: center;
+   gap: 15px;
+
+}
+
+.form_box{
+    /* background: rgb(255, 255, 255); */
+    height: 100%;
+    width: 50%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.img{
+    /* background: white; */
+    height: 500px;
+    width: 50%;
+    background: url(../img/Img_login.png);
+    background-size:contain;
+    background-position: left;
+    background-repeat:no-repeat;
+}
+
+.form{
+    height: 700px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap:10px;
+    align-items: center;
+}
+
+.titulo_form{
+    border-top: #3722bb 2px solid;
+    border-bottom: #3722bb 2px solid;
+    height: 45px;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.infor{
+    height: 50px;
+    width: 500px;
+    margin-right: 1%;
+    border-radius: 8px;
+    border: none;
+    background-color: #edf1ff;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.text{
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.cadastro{
+    margin-left: auto;
+}
+
+.cadastro a{
+    margin-left: auto;
+    border-bottom: blue solid 1px;
+}
+
+.color_button{
+    height: 50px;
+    width: 500px;
+    border: none;
+    border-radius: 8px;
+    background-color: #86a1ff;
+    font-size: 25px;
+    margin-top: 150px;
+    cursor: pointer;
+}
