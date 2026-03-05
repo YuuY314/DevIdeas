@@ -27,6 +27,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 
 .buttons {
@@ -61,11 +62,15 @@ header nav ul li a {
     transition: .5s ease-in-out;
 }
 
-header nav ul .header_buttons {
+header nav ul li .header_buttons {
     background-color: var(--indigo);
     color: var(--white);
 }
 
 header nav ul li a:hover {
     color: var(--indigo);
+}
+
+main {
+    margin-top: 100px;
 }

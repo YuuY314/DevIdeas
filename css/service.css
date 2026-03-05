@@ -56,10 +56,6 @@ header nav ul .header_buttons i {
     
 }
 
-main{
-    margin-top: 100px;
-}
-
 .services {
     display: flex;
     min-height: 90vh;
