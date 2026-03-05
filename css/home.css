@@ -35,7 +35,7 @@ main #about_us {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: 250vh;
     flex-direction: column;
     gap: 3rem;
     margin-top: 3rem;
@@ -168,4 +168,43 @@ main #about_us #our_techs #techs_container .techs_column .techs img {
     height: 50px;
     width: 50px;
     object-fit: contain;
+}
+
+main #about_us #our_clients {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #about_us #our_clients h1 {
+    font-size: 3rem;
+}
+
+main #about_us #our_clients .carousel_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #about_us #our_clients .carousel_buttons {
+    width: 50px;
+    height: 100px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+main #about_us #our_clients .carousel_container .left {
+    background-image: url("../img/arrow_left.png");
+}
+
+main #about_us #our_clients .carousel_container .right {
+    background-image: url("../img/arrow_right.png");
+}
+
+main #about_us #our_clients .carousel_images img {
+    height: 200px;
+    width: 200px;
 }
