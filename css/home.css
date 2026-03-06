@@ -21,14 +21,18 @@ main #banner #banner_content_container {
 }
 
 main #banner #banner_content_container h1 {
-    font-size: 4.5rem;
-    width: 70%;
+    font-size: 4rem;
+    width: 60%;
 }
 
 main #banner #banner_content_container p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 55%;
     text-align: justify;
+}
+
+main #banner #banner_content_container #banner_button {
+    margin-top: 2rem;
 }
 
 main #about_us {
@@ -50,7 +54,7 @@ main #about_us #who_we_are {
 }
 
 main #about_us #who_we_are h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--blue);
 }
 
@@ -76,7 +80,7 @@ main #about_us #our_values {
 }
 
 main #about_us #our_values h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--white);
 }
 
@@ -108,7 +112,7 @@ main #about_us #our_team {
 }
 
 main #about_us #our_team h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 main #about_us #our_team #team_container {
@@ -131,22 +135,61 @@ main #about_us #our_techs {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 main #about_us #our_techs h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 main #about_us #our_techs #techs_container {
     width: 80%;
     height: 80%;
     padding: 10px;
-    background-color: var(--indigo);
-    color: var(--white);
+    background-color: #efefef;
+    color: var(--black);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#techs_container::after, #techs_container::before {
+    --angle: 0deg;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, #0b2b8b, #a649bc, #7622bf71);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 20px;
+    animation: 5s spin linear infinite;
+}
+
+#techs_container::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
 }
 
 main #about_us #our_techs #techs_container .techs_column {
@@ -179,32 +222,53 @@ main #about_us #our_clients {
 }
 
 main #about_us #our_clients h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 main #about_us #our_clients .carousel_container {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    max-width: 1000px;
+    position: relative;
+    padding: 20px;
 }
 
 main #about_us #our_clients .carousel_buttons {
-    width: 50px;
-    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
     background-size: cover;
     background-position: center;
 }
 
 main #about_us #our_clients .carousel_container .left {
     background-image: url("../img/arrow_left.png");
+    left: -10px;
 }
 
 main #about_us #our_clients .carousel_container .right {
     background-image: url("../img/arrow_right.png");
+    right: -10px;
+}
+
+main #about_us #our_clients .carousel_container .carousel_images {
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 main #about_us #our_clients .carousel_images img {
+    padding: 10px;
     height: 200px;
-    width: 200px;
+    width: calc(100% / 5);
+    object-fit: contain;
+    padding: 10px 20px;
 }
