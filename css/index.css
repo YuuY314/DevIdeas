@@ -81,11 +81,11 @@ main {
 }
 
 footer {
-    height: 40vh;
+    height: 30vh;
     background-color: var(--indigo);
     display: flex;
     justify-content: space-evenly;
-    padding-top: 4rem;
+    padding-top: 2rem;
     color: var(--white);
     position: relative;
 }
