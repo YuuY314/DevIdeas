@@ -90,7 +90,7 @@ header{
     justify-items: center;
     font-size: 20px;
     margin-top: 70px;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .button:hover{
