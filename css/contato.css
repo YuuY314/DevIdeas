@@ -1,0 +1,163 @@
+.background{
+    background: #d1dbff;
+}
+
+header{
+    background: white ;
+}
+
+.container{
+    padding: 10px;
+   display: flex;
+   justify-content: center;
+   height: calc(100vh - 120px);
+   align-items: center;
+   gap: 15px;
+}
+
+.box{
+    /* background:red ; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+.quadrado{
+    margin-left: 30px;
+    background: #3722bb;
+    height: 200px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.quadrado_{
+    margin-left: 30px;
+    background: #3722bb;
+    height: 350px;
+    width: 400px;
+    border-radius: 30px;
+}
+.contato{
+    background-color: #3722bb;
+    height: 750px;
+    width: 650px;
+    border-radius: 50px;
+    margin-top: 250px;
+}
+
+.text{
+    margin-left: 65px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.titulo_cadastro{
+    /* margin-left: 45px; */
+    border-bottom: #ffffff 2px solid;
+    height: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-left: 20px;
+    color: white;
+}
+
+.infor{
+    margin-left: 55px;
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    /* margin-left: 100px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: #edf1ff;
+    border-radius: 5px;
+    font-size: 20px; */
+} 
+
+.infor_{
+    margin-left: 55px;
+    height: 30px;
+    width: 543px;
+    border-radius: 5px;
+    border: none;
+}
+
+.informa{
+    margin-left: 55px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.inform{
+    margin-left: 50px;
+    height: 100px;
+    width: 545px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* .container-inputs{
+    display: flex;
+    align-items: end;
+    margin-bottom: 100px;
+}
+
+.container-inputs input{
+    flex: 1;
+   
+} */
+
+.sub_titulo{
+    color: white;
+    margin-left: 65px;
+    font-size: 18px;
+}
+
+.texto{
+    color: white;
+    display: flex;
+    margin-left: 65px;
+    padding-bottom: 10px;
+}
+
+.container-inputs{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.margem{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 45px;
+    width: 150px;
+    background: white ;
+    color: black;
+    border-radius: 10px;
+}
+
+.button:hover{
+    transform: scale(1.1);
+
+}
