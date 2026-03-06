@@ -32,7 +32,6 @@ header{
     height: 200px;
     width: 400px;
     border-radius: 30px;
-    display: flex;
 }
 
 .quadrado_{
@@ -58,11 +57,12 @@ header{
 }
 
 .titulo_cadastro{
-    margin-left: 45px;
+    /* margin-left: 45px; */
     border-bottom: #ffffff 2px solid;
     height: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
     padding-left: 20px;
-    padding-right: 20px;
     color: white;
 }
 
@@ -131,4 +131,33 @@ header{
     display: flex;
     margin-left: 65px;
     padding-bottom: 10px;
+}
+
+.container-inputs{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.margem{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 45px;
+    width: 150px;
+    background: white ;
+    color: black;
+    border-radius: 10px;
+}
+
+.button:hover{
+    transform: scale(1.1);
+
 }
