@@ -1,6 +1,16 @@
 /* Cor gradiente do fundo da tela */
-.background{
+body{
+    height: 100vh;
     background: linear-gradient(to right, #3722bb , #828eff);
+    background-size: 400% 400%;
+    animation: moverFundo 15s ease infinite;
+
+}
+
+@keyframes moverFundo{
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 
 }
 
@@ -28,6 +38,7 @@ header{
     display: flex;
     justify-content: right;
     align-items: center;
+    margin-top: 300px;
 }
 
 .img{
@@ -38,6 +49,7 @@ header{
     background-size:contain;
     background-position: left;
     background-repeat:no-repeat;
+    margin-top: 300px;
 }
 
 .form{
@@ -91,11 +103,16 @@ header{
 
 .color_button{
     height: 50px;
-    width: 500px;
+    width: 400px;
     border: none;
     border-radius: 8px;
     background-color: #86a1ff;
     font-size: 25px;
     margin-top: 150px;
     cursor: pointer;
+}
+
+.color_button:hover{
+     transform: scale(1.1);
+
 }
