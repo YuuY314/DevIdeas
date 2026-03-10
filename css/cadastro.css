@@ -89,11 +89,14 @@ header{
     display: flex;
     justify-items: center;
     font-size: 20px;
-    margin-top: 70px;
-    /* cursor: pointer; */
+    cursor: pointer;
+}
+
+.posicao{
+    margin-top: 75px;
 }
 
 .button:hover{
-     transform: scale(1.1);
+    transform: scale(1.1);
 
 }
