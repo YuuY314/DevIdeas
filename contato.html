@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contato</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/contato.css">
 </head>
-
 <body class="background">
     <header>
         <a href="index.html">
@@ -20,15 +22,14 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#about_us">Quem Somos</a>
+                    <a href="index.html#about_us">Quem Somos</a>
                 </li>
                 <li>
                     <a href="services.html">Serviços</a>
                 </li>
                 <li>
-                    <a href="contact.html">
-                        <button class="buttons header_buttons"><i class="fa-solid fa-right-long"></i> Entre em
-                            Contato</button>
+                    <a href="contato.html">
+                        <button class="buttons header_buttons"><i class="fa-solid fa-right-long"></i> Entre em Contato</button>
                     </a>
                 </li>
                 <li>
@@ -39,7 +40,6 @@
             </ul>
         </nav>
     </header>
-
     <div class="container">
         <div class="box">
             <div class="quadrado">
@@ -72,36 +72,80 @@
             <div class="container-inputs">
                 <div>
                     <p class="text">Nome</p>
-                    <input class="infor" type="text">
+                    <input class="infor" type="text" placeholder="João">
                 </div>
 
                 <div>
                     <p class="text">Sobrenome</p>
-                    <input class="infor" type="text">
+                    <input class="infor" type="text" placeholder="Silva">
                 </div>
 
             </div>
 
-            <p class="text">E-mail</p>
-            <input class="infor_" type="email">
+            <div class="container-inputs-single">
+                <p class="text">E-mail</p>
+                <input class="infor_" type="email" placeholder="exemplo@email.com">
+            </div>
 
             <div class="container-inputs">
                 <div><p class="text">DDD</p>
-                <input class="informa" type="number"></div>
+                <input class="informa" type="tel" maxlength="2" placeholder="11"></div>
                 <div><p class="text">Número de telefone</p>
-                <input class="infor" type="number"></div>
+                <input class="infor" id="tel" type="tel" maxlength="9" placeholder="999998888"></div>
             </div>
 
 
-            <p class="text">Tipo de serviços</p>
-            <input class="infor_" type="text">
-            <p class="text">Nós conte um pouco mais</p>
-            <textarea class="inform" type="text"></textarea> 
+            <div class="container-inputs-single">
+                <p class="text">Tipo de serviços</p>
+                <select class="infor_">
+                    <option value="" disabled selected>Selecione o tipo de serviço</option>
+                    <option value="manutenção">Manutenção</option>
+                    <option value="web">Desenvolvimento Web</option>
+                    <option value="nuvem">Implementação em Nuvem</option>
+                </select>
+            </div>
+
+            <div class="container-inputs-single">
+                <p class="text">Nós conte um pouco mais</p>
+                <textarea class="inform" type="text"></textarea> 
+            </div>
 
             <input class="button" type="submit" value="Enviar">
         </div>
     </div>
-
+    <footer>
+        <div id="socials">
+            <div>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>@devideas
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>DevIdeas
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-github"></i>dev.ideas
+                </a>
+            </div>
+        </div>
+        <div id="description">
+            <a href="#top">
+                <img src="img/footer_logo.png" alt="DevIdeas">
+            </a>
+            <p>Tecnologia sob medida para acelerar o crescimento do seu negócio.</p>
+        </div>
+        <div id="talk_to_us">
+            <h2>Fale Conosco</h2>
+            <div class="contacts">
+                <i class="fa-solid fa-phone"></i>(11) 4004-4004
+            </div>
+            <div class="contacts">
+                <i class="fa-regular fa-envelope"></i>contato@devideas.com
+            </div>
+            <div class="contacts">
+                <i class="fa-solid fa-map-location-dot"></i>Rua Fulano, 999, Sala 100 Bairro, São Caetano do Sul São Paulo
+            </div>
+        </div>
+        <p class="copyright">DevIdeas @ 2026 | Todos os Direitos Reservados</p>
+    </footer>
 </body>
-
 </html>

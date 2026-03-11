@@ -2,56 +2,66 @@
     background: #d1dbff;
 }
 
-header{
-    background: white ;
-}
-
 .container{
-    padding: 10px;
    display: flex;
-   justify-content: center;
-   height: calc(100vh - 120px);
+   /* justify-content: center; */
    align-items: center;
-   gap: 15px;
+   height: 100vh;
+   width: 100%;
+   /* gap: 15px; */
+   padding-top: 100px;
 }
 
 .box{
     /* background:red ; */
     width: 50%;
+    height: 700px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    gap: 25px;
-    margin-top: 100px;
+    justify-content: flex-start;
+    gap: 50px;
 }
 
 .quadrado{
-    margin-left: 30px;
     background: #3722bb;
     height: 200px;
     width: 400px;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-top: 30px;
 }
 
 .quadrado_{
-    margin-left: 30px;
     background: #3722bb;
-    height: 350px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     border-radius: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
 }
+
 .contato{
     background-color: #3722bb;
-    height: 750px;
+    height: 700px;
     width: 650px;
     border-radius: 50px;
-    margin-top: 250px;
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .text{
-    margin-left: 65px;
-    margin-top: 30px;
+    /* margin-left: 65px; */
+    /* margin-top: 30px; */
     font-size: 18px;
     color: white;
 }
@@ -59,21 +69,21 @@ header{
 .titulo_cadastro{
     /* margin-left: 45px; */
     border-bottom: #ffffff 2px solid;
-    height: 45px;
+    /* height: 45px;
     margin-left: 45px;
     margin-right: 45px;
-    padding-left: 20px;
+    padding-left: 20px; */
     color: white;
 }
 
 .infor{
-    margin-left: 55px;
+    margin-left: 0px;
     height: 30px;
     width: 250px;
     border: none;
     border-radius: 5px;
-    padding: 5px;
-    font-size: 20px;
+    /* padding: 5px; */
+    /* font-size: 20px; */
     /* margin-left: 100px;
     height: 30px;
     width: 100px;
@@ -84,15 +94,15 @@ header{
 } 
 
 .infor_{
-    margin-left: 55px;
+    /* margin-left: 55px; */
     height: 30px;
-    width: 543px;
+    width: 92%;
     border-radius: 5px;
     border: none;
 }
 
 .informa{
-    margin-left: 55px;
+    /* margin-left: 55px; */
     height: 30px;
     width: 100px;
     border: none;
@@ -100,37 +110,52 @@ header{
 }
 
 .inform{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     height: 100px;
-    width: 545px;
+    width: 92%;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
-    padding: 5px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
-/* .container-inputs{
+input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+select {
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+#tel {
+    width: 400px;
+}
+
+.container-inputs{
     display: flex;
-    align-items: end;
-    margin-bottom: 100px;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
-.container-inputs input{
-    flex: 1;
-   
-} */
+.container-inputs-single{
+    margin-top: 20px;
+    width: 100%;
+}
 
 .sub_titulo{
     color: white;
-    margin-left: 65px;
+    /* margin-left: 65px; */
     font-size: 18px;
 }
 
 .texto{
     color: white;
     display: flex;
-    margin-left: 65px;
+    /* margin-left: 65px; */
     padding-bottom: 10px;
 }
 
@@ -140,28 +165,30 @@ header{
     align-items: center;
 }
 
-.margem{
+/* .margem{
     margin-top: 5px;
     font-size: 18px;
-}
+} */
 
 .button{
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    height: 45px;
-    width: 150px;
+    align-self: center;
+    margin-top: 20px;
+    max-width: 300px;
+    width: 300px;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
     background: white ;
     color: black;
     border-radius: 10px;
     border:none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .button:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     background-color: #bbb5e6;
+    color: white;
 }
