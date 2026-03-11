@@ -97,7 +97,6 @@ header{
     width: 100px;
     border: none;
     border-radius: 5px;
-
 }
 
 .inform{
@@ -155,9 +154,12 @@ header{
     background: white ;
     color: black;
     border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover{
     transform: scale(1.1);
-
+    background-color: #bbb5e6;
 }
