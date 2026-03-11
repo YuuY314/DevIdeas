@@ -98,6 +98,9 @@ section p {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
     display: flex;
     flex-direction: column;
+    /*Animação dos cards*/
+    transition: transform 0.3s ease-in-out, background-color 0.33s ease-in-out, color 0.1s ease-in-out;
+    background-color: #ffffff;
 }
 
 .cards h2{
@@ -109,6 +112,22 @@ section p {
 
 .cards.one ul li:last-child{
     margin-bottom: 5px;
+}
+
+
+.cards:hover{
+    transform:scale(1.05) ;
+    background-color: #29266b;
+    color: white;
+}
+
+.cards:hover .price p{
+    color: white;
+}
+
+.cards:hover .price a{
+    background-color: rgb(225, 218, 255);
+    color: black;
 }
 
 .cards ul li {
@@ -128,6 +147,7 @@ section p {
     margin: 0;
     text-align: center;
     color: black;
+    transition: color 0.1s ease-in-out;
 }
 
 .price h1{
@@ -142,7 +162,22 @@ section p {
     color: #fff ;
     cursor: pointer; 
     font-size: 21.8px;
-    background-color: #a15295;
+    background-color: rgb(82, 96, 188);
+    transition: background-color 0.33s ease-in-out, color 0.1s ease-in-out;
+}
+
+/*Segunda seção*/
+
+@keyframes tela_transicao {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .box{
@@ -154,12 +189,18 @@ section p {
     padding: 40px;
     border-radius: 50px;
     border: 8px solid transparent;
+    /*Cor da borda*/
     background-image: 
     linear-gradient(white, white), 
     linear-gradient(120deg, #0b2b8b, #a649bc, #7622bf71);
-    
     background-origin: border-box;
     background-clip: padding-box, border-box;
+
+    /*Animação da transição de tela*/
+
+    /* animation: tela_transicao linear;
+    animation-timeline: view();
+    animation-range: entry 0%; */
 }
 
 .foto_title h1{

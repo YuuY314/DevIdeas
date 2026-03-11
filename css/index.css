@@ -15,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -40,7 +41,7 @@ header {
     border-radius: 20px;
     padding: 10px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background-color: var(--white);
     color: var(--black);
     max-width: 300px;
@@ -76,50 +77,62 @@ header nav ul li a:hover {
     color: var(--indigo);
 }
 
+header nav ul li .header_buttons:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
 main {
     padding-top: 100px;
 }
 
 footer {
-    height: 40vh;
+    height: 30vh;
     background-color: var(--indigo);
     display: flex;
     justify-content: space-evenly;
-    padding-top: 4rem;
+    padding-top: 2rem;
     color: var(--white);
     position: relative;
 }
 
 footer #socials {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}
+
+footer #socials div {
     gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer #socials a {
     color: var(--white);
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 footer #socials a i {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--white);
 }
 
 footer #description {
-    width: 30%;
-    font-size: 1.5rem;
-    text-align: justify;
+    width: 34%;
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 footer #talk_to_us {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+    width: 33%;
 }
 
 footer #talk_to_us h2 {
@@ -134,11 +147,11 @@ footer #talk_to_us .contacts {
 }
 
 footer #talk_to_us .contacts {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 footer #talk_to_us .contacts i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 footer .copyright {
