@@ -168,18 +168,6 @@ section p {
 
 /*Segunda seção*/
 
-@keyframes tela_transicao {
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-
-    to{
-        opacity: 1;
-        scale: 1;
-    }
-}
-
 .box{
     width: 80%;
     display: flex;
@@ -189,6 +177,7 @@ section p {
     padding: 40px;
     border-radius: 50px;
     border: 8px solid transparent;
+    box-shadow: 2px 2px 5px black;
     /*Cor da borda*/
     background-image: 
     linear-gradient(white, white), 
@@ -198,15 +187,39 @@ section p {
 
     /*Animação da transição de tela*/
 
-    /* animation: tela_transicao linear;
+    animation: tela_transicao both;
     animation-timeline: view();
-    animation-range: entry 0%; */
+}
+
+
+.box:nth-child(1){
+    animation-range: entry 20% cover 40%;
+}
+
+.box:nth-child(2){
+    animation-range: entry 40% cover 50%;
+}
+
+.box:nth-child(3){
+    animation-range: entry 50% cover 60%;
+}
+
+@keyframes tela_transicao {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0) scale(1);
+    }
+    
 }
 
 .foto_title h1{
     font-size: 42px;
     margin-bottom: 10px;
-    text-decoration: underline;
 }
 
 
@@ -239,8 +252,16 @@ section p {
 .btn2 a {
     padding: 10px 25px;
     border-radius: 999px;
-    border: 2px solid rgb(121, 121, 121);
+    border: 2px solid rgba(121, 121, 121, 0.703);
     color: black;
+    background-color: white;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.btn2 a:hover{
+    background-color:#5447a9;
+    color: white;
+   
 }
 
 .box.ds{
@@ -259,7 +280,6 @@ section p {
 
 .foto_title2 h1{
     font-size: 42px;
-    text-decoration: underline;
     margin-bottom: 0.3em;
     width: 100%;
     text-align: center;
