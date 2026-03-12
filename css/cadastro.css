@@ -23,6 +23,7 @@ header{
     height: calc(100vh - 120px);
     align-items: center;
     gap: 15px;
+    margin-bottom: 150px;
 
 }
 
@@ -49,6 +50,7 @@ header{
     gap: 5px;
     align-items: center;
     margin-top: 250px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
 .titulo_cadastro{

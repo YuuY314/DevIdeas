@@ -70,34 +70,39 @@
             <h1 class="titulo_cadastro">Entre em contato</h1>
 
             <div class="container-inputs">
-                <div>
-                    <p class="text">Nome</p>
-                    <input class="infor" type="text" placeholder="João">
+                 <div class="input-group">
+                    <input required="" type="text" class="input">
+                    <label class="user-label">Nome</label>
                 </div>
-
-                <div>
-                    <p class="text">Sobrenome</p>
-                    <input class="infor" type="text" placeholder="Silva">
+               <div class="input-group">
+                    <input required="" type="text" class="input">
+                    <label class="user-label">Sobrenome</label>
                 </div>
 
             </div>
 
-            <div class="container-inputs-single">
-                <p class="text">E-mail</p>
-                <input class="infor_" type="email" placeholder="exemplo@email.com">
-            </div>
+            <div class="input-group">
+                    <input required="" type="text" class="input">
+                    <label class="user-label">Email</label>
+                </div>
 
             <div class="container-inputs">
-                <div><p class="text">DDD</p>
-                <input class="informa" type="tel" maxlength="2" placeholder="11"></div>
-                <div><p class="text">Número de telefone</p>
-                <input class="infor" id="tel" type="tel" maxlength="9" placeholder="999998888"></div>
+                <div class="input-group">
+                    <input required="" type="text" class="input">
+                    <label class="user-label">DDD</label>
+                </div>
+                
+               <div class="input-group">
+                    <input required="" type="text" class="input">
+                    <label class="user-label">Telefone</label>
+                </div>
             </div>
 
 
             <div class="container-inputs-single">
                 <p class="text">Tipo de serviços</p>
                 <select class="infor_">
+                    
                     <option value="" disabled selected>Selecione o tipo de serviço</option>
                     <option value="manutenção">Manutenção</option>
                     <option value="web">Desenvolvimento Web</option>
@@ -106,8 +111,10 @@
             </div>
 
             <div class="container-inputs-single">
-                <p class="text">Nós conte um pouco mais</p>
-                <textarea class="inform" type="text"></textarea> 
+              <div class="input-group">
+                <p class="text">Nos conte um pouco mais</p>
+                    <textarea class="input"></textarea> 
+                </div>
             </div>
 
             <input class="button" type="submit" value="Enviar">
