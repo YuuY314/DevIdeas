@@ -66,7 +66,7 @@
                 <p class="texto">SP</p>
             </div>
         </div>
-        <div class="contato">
+        <form class="contato">
             <p class="text">Formulário</p>
             <h1 class="titulo_cadastro">Entre em contato</h1>
 
@@ -89,21 +89,20 @@
 
             <div class="container-inputs">
                 <div class="input-group">
-                    <input required="" type="text" class="input">
+                    <input required="" type="tel" class="input" maxlength="2">
                     <label class="user-label">DDD</label>
                 </div>
                 
                <div class="input-group">
-                    <input required="" type="text" class="input">
+                    <input required="" type="tel" class="input" maxlength="9">
                     <label class="user-label">Telefone</label>
                 </div>
             </div>
 
 
             <div class="container-inputs-single">
-                <p class="text">Tipo de serviços</p>
-                <select class="infor_">
-                    
+                <p class="text">Tipo de serviço</p>
+                <select class="infor_" required="">
                     <option value="" disabled selected>Selecione o tipo de serviço</option>
                     <option value="manutenção">Manutenção</option>
                     <option value="web">Desenvolvimento Web</option>
@@ -119,7 +118,7 @@
             </div>
 
             <input class="button" type="submit" value="Enviar">
-        </div>
+        </form>
     </div>
     <footer>
         <div id="socials">
