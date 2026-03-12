@@ -71,6 +71,7 @@ header nav ul li a {
 header nav ul li .header_buttons {
     background-color: var(--indigo);
     color: var(--white);
+    transition: .5s ease-in-out;
 }
 
 header nav ul li a:hover {

@@ -33,6 +33,13 @@ main #banner #banner_content_container p {
 
 main #banner #banner_content_container #banner_button {
     margin-top: 2rem;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+
+main #banner #banner_content_container #banner_button:hover {
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 main #about_us {

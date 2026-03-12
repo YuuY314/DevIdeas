@@ -1,9 +1,9 @@
 /* Cor gradiente do fundo da tela */
 body{
     height: 100vh;
-    background: linear-gradient(to right, #3722bb , #828eff);
+    /* background: linear-gradient(to right, #3722bb , #828eff);
     background-size: 400% 400%;
-    animation: moverFundo 15s ease infinite;
+    animation: moverFundo 15s ease infinite; */
 
 }
 
@@ -11,7 +11,16 @@ body{
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%;}
+}
 
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(to right, #3922bb, #828eff);
+    background-size: 400% 400%;
+    animation: moverFundo 15s ease infinite;
 }
 
 /* Colocando cor do header */
@@ -108,10 +117,13 @@ header{
     width: 400px;
     border: none;
     border-radius: 8px;
-    background-color: #4166eeaf;
+    /* background-color: #4166eeaf; */
+    background-color: var(--indigo);
+    color: var(--white);
     font-size: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
 }
 
 .area{
@@ -119,8 +131,9 @@ header{
 }
 
 .color_button:hover{
-     transform: scale(1.1);
-     background-color: rgb(139, 139, 231);
+     /* transform: scale(1.1); */
+     /* background-color: rgb(139, 139, 231); */
+     background-color: var(--blue);
 
 }
 
